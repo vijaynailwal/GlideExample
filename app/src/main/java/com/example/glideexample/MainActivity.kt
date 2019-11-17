@@ -51,7 +51,8 @@ class MainActivity : AppCompatActivity() {
 
         progressBar.setVisibility(View.VISIBLE)
         Glide.with(this)
-            .load("https://moodle.htwchur.ch/pluginfil.php/124614/mod_page/content/4/example.jpg")
+//            .load("https://moodle.htwchur.ch/pluginfil.php/124614/mod_page/content/4/example.jpg")//wrong url
+            .load("https://moodle.htwchur.ch/pluginfil.php/124614/mod_page/content/4/example.jpg")//correct url
             .error(R.drawable.ic_error) //error
             .listener(object : RequestListener<Drawable> {
                 override fun onResourceReady(
